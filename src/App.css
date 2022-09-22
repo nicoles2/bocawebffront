@@ -1,38 +1,71 @@
-.App {
+.container{
+  max-width: 1200px;
+  
+  margin:0 auto;
+  min-height:100vh;
+  background-color: lightblue; 
+  padding: 30px;
+ 
+}
+.cabecalho{
   text-align: center;
+  font-style: italic;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 30px;
+  border-radius: 20px;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  width: 800px;
+  margin:20px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.busca input {
+  background-color: transparent;
+  padding: 0.5rem;
+	text-align: center;
+	font-size: 15px;
+	border-radius: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.busca{
+  text-align: center;
+  margin: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.lista{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px,1.5fr));
+  gap:40px;
+  background-color: ;
+  text-align: center;
+
+}
+.lista {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+objeto:hover{
+  transform:scale(1.05)
+}
+.objeto {
+  background-color: rgb(20, 20, 20);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.objeto-content{
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rodape{
+  margin-top: 25px;
+  text-align: center;
+  font-style: italic;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 30px;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  border-radius: 20px;
+  width: 800px;
+  margin:20px auto;
 }
